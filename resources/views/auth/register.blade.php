@@ -75,6 +75,7 @@
                                 
                             </div>
                         </div><!--Row 2 end-->
+
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label class="label control-label">Password</label>
                             <input type="password" class="form-control" name="password" placeholder="password" required>
@@ -84,8 +85,7 @@
                                 </span>
                             @endif
                         </div>
-                        
-                        
+                                     
                         <label class="label control-label">Confirm Password</label>
                         <input type="password" class="form-control" name="passwordConf" placeholder="confirm password" required>
                         
@@ -109,5 +109,4 @@
         </div>
     </div>
 </div>
-
 @endsection

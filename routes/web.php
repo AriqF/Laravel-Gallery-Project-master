@@ -12,6 +12,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/login', function () {
+    return view('login');
+}) -> name('login');
+
+Route::get('/register', function () {
+    return view('register');
+}) -> name('register');
+
+
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 
@@ -33,5 +42,5 @@ Route::get('/photo/{photo}/edit', 'PhotosController@edit');
 Route::put('/photo/{photo}', 'PhotosController@update');
 Route::delete('/photo/{photo}', 'PhotosController@destroy');
 
-Auth::routes();
+//Auth::routes();
 Route::get('/dashboard', 'DashboardController@index');
