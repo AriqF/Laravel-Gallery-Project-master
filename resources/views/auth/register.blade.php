@@ -65,7 +65,7 @@
                             <div class="col-6 ">
                                 <div class="form-group{{ $errors->has('kelas') ? ' has-error' : '' }}">
                                     <label class="label control-label">Kelas</label>
-                                    <input type="text" class="form-control" name="kelas" placeholder="ex: A, B" style="text-transform: uppercase;" required>
+                                    <input type="text" class="form-control" name="kelas" placeholder="ex: A, B" maxlength="1" style="text-transform: uppercase;" required>
                                     @if ($errors->has('kelas'))
                                         <span class="help-block">
                                             <strong>{{ $errors->first('kelas') }}</strong>
