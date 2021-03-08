@@ -28,6 +28,10 @@ Route::get('/forgotPassword', function () {
     return view('auth/passwords/reset');
 }) -> name('forgotPassword');
 
+Route::get('/email-request', function () {
+    return view('auth/passwords/email');
+}) -> name('email-req');
+
 
 
 
