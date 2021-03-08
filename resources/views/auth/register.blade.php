@@ -15,10 +15,10 @@
                         <!-- samakan nama di tag input, first('') , dan di DB-->
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                             <label class="label control-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" name="fullname" placeholder="nama lengkap" required autofocus>
+                            <input type="text" class="form-control" name="name" placeholder="nama lengkap" required autofocus>
                             @if($errors->has('name'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('fullname')</strong> <!--"/"  unexpected -->
+                                    <strong>{{ $errors->first('name')</strong> <!--"/"  unexpected -->
                                 </span>
                             @endif
                         </div>

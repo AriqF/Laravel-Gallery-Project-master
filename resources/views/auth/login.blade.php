@@ -16,17 +16,17 @@
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label class="label control-label">email</label>
-                            <input type="email" class="form-control" name="email" placeholder="email">
+                            <input type="email" class="form-control" name="email" placeholder="email" required>
                             @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+                                <span class="help-block">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
+                            @endif
                         </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label class="label control-label">Password</label>
-                            <input type="password" class="form-control" name="password" placeholder="password">
+                            <input type="password" class="form-control" name="password" placeholder="password" required>
                             @if ($errors->has('password'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('password') }}</strong>
