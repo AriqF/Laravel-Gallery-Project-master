@@ -18,7 +18,7 @@
                             <input type="text" class="form-control" name="name" placeholder="nama lengkap" required autofocus>
                             @if($errors->has('name'))
                                 <span class="help-block">
-                                    <strong>{{ $errors->first('name')</strong> <!--"/"  unexpected -->
+                                    <strong>{{ $errors->first('name') }}</strong>
                                 </span>
                             @endif
                         </div>
