@@ -92,7 +92,7 @@
                         <div class="col text-center" style="margin-top: 15px;">
                             <a href="{{ route('login') }}">saya sudah memiliki akun &#10003;</a>
                             <div class="w-100"></div>
-                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="startbtn" style="margin-top: 10px;">
+                            <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="startbtn" style="margin-top: 10px;">
                                 Sign Up
                             </button>
                         </div>

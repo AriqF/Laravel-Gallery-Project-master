@@ -16,7 +16,7 @@
                         </div>
                     @endif
                     <div class="w-100"></div>
-                    <form method="POST" action="{{ route('password.request') }}">
+                    <form method="POST" action="{{ route('email-req') }}"> 
                         {{ csrf_field() }}
                         <input type="hidden" name="token" value="{{ $token }}">
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}"> 

@@ -38,7 +38,7 @@
                         <div class="col text-center" style="margin-top: 240px;">
                             <a href="{{ route('register') }}">saya belum memiliki akun</a> <a href="{{ route('forgotPassword') }}"> / lupa password?</a>
                             <div class="w-100"></div>
-                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="startbtn" style="margin-top: 10px;">
+                            <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" id="startbtn" style="margin-top: 10px;">
                                 Login
                             </button>
                         </div>
