@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,8 +37,8 @@ Route::get('/email-request', function () {
     return view('auth/passwords/email');
 }) -> name('email-req');
 
-
-
+Route::post('/register', 'Auth\RegisterController@create');
+Route::get('/register', 'Auth\RegisterController@validator');
 
 
 Route::get('/about', 'PagesController@about');
